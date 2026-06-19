@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manoj Kumar R | Full Stack Java Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <span>MK</span>
+  </div>
+
+  <!-- ── CURSOR ── -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-logo">MK</div>
+    <ul class="nav-links">
+      <li><a href="#home"         data-nav="home">Home</a></li>
+      <li><a href="#about"        data-nav="about">About</a></li>
+      <li><a href="#skills"       data-nav="skills">Skills</a></li>
+      <li><a href="#projects"     data-nav="projects">Projects</a></li>
+      <li><a href="#certificates" data-nav="certificates">Certificates</a></li>
+      <li><a href="#education"    data-nav="education">Education</a></li>
+      <li><a href="#contact"      data-nav="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home"         class="mobile-link">Home</a></li>
+      <li><a href="#about"        class="mobile-link">About</a></li>
+      <li><a href="#skills"       class="mobile-link">Skills</a></li>
+      <li><a href="#projects"     class="mobile-link">Projects</a></li>
+      <li><a href="#certificates" class="mobile-link">Certificates</a></li>
+      <li><a href="#education"    class="mobile-link">Education</a></li>
+      <li><a href="#contact"      class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Full Stack Java Developer</p>
+      <h1 class="hero-name reveal-up delay-1">
+        Manoj Kumar<br/><span>R</span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-2">
+        Building scalable full-stack applications<br>
+        with Java, Spring Boot &amp; modern web technologies.
+      </p>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal-left">
+          <div class="about-avatar">MK</div>
+          <div class="about-stat-cards">
+            <div class="stat-card">
+              <strong>7.55</strong><span>CGPA</span>
+            </div>
+            <div class="stat-card">
+              <strong>3+</strong><span>Projects</span>
+            </div>
+            <div class="stat-card">
+              <strong>4+</strong><span>Certs</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <p>I am <strong>Manoj Kumar R</strong>, a passionate Computer Science Engineering graduate from Vinayaka Missions Kirupananda Variyar Engineering College, Salem with a CGPA of 7.55.</p>
+          <p>Currently training as a <strong>Full Stack Java Developer</strong> at Besant Technologies, Marathahalli, Bengaluru, building expertise in Core Java, Spring Boot, Hibernate/JPA, MySQL, HTML, CSS, and JavaScript.</p>
+          <p>I have built an AI-powered e-commerce platform (ShopAI India) using Spring Boot &amp; OpenAI GPT API, a Banking Management System with full transaction features, and completed an industry internship at HCL Technologies.</p>
+          <p>My goal is to secure an entry-level Java/Full Stack Developer role and build impactful, scalable applications that make a real difference.</p>
+          <div class="about-info">
+            <div class="info-item"><i class="fa fa-map-marker-alt"></i> Bengaluru / Chennai, India</div>
+            <div class="info-item"><i class="fa fa-graduation-cap"></i> B.E. CSE — 2022–2026</div>
+            <div class="info-item"><i class="fa fa-envelope"></i> manojkumar.r12121@gmail.com</div>
+            <div class="info-item"><i class="fa fa-phone"></i> +91 9500553744</div>
+          </div>
+          <a href="#contact" class="btn-primary mt-20">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <h3 class="skills-sub reveal-up">Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <h4>Java &amp; Core Java</h4>
+          <p>OOP, data structures, collections, exception handling &amp; multithreading.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-delay="1">
+          <div class="skill-icon"><i class="fa fa-leaf"></i></div>
+          <h4>Spring Boot</h4>
+          <p>REST APIs, MVC architecture, dependency injection &amp; application development.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-delay="2">
+          <div class="skill-icon"><i class="fa fa-database"></i></div>
+          <h4>MySQL &amp; JDBC</h4>
+          <p>Relational database design, query writing, joins &amp; JPA/Hibernate basics.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <h3 class="skills-sub reveal-up" style="margin-top:48px;">Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <p>Structured, semantic web pages built to modern HTML5 standards.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-delay="1">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <p>Flexbox, Grid, responsive design &amp; UI animations.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+        </div>
+        <div class="skill-card reveal-up" data-delay="2">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h4>JavaScript (ES6+)</h4>
+          <p>DOM manipulation, async/await, REST API integration &amp; modern JS patterns.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <h3 class="skills-sub reveal-up" style="margin-top:48px;">Soft Skills</h3>
+      <div class="soft-skills-grid">
+        <div class="soft-card reveal-up"><i class="fa fa-lightbulb"></i><span>Problem Solving</span></div>
+        <div class="soft-card reveal-up"><i class="fa fa-clock"></i><span>Time Management</span></div>
+        <div class="soft-card reveal-up"><i class="fa fa-users"></i><span>Team Collaboration</span></div>
+        <div class="soft-card reveal-up"><i class="fa fa-comments"></i><span>Communication</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" data-delay="0">
+          <div class="project-number">01</div>
+          <div class="project-icon"><i class="fa fa-shopping-cart"></i></div>
+          <h3>ShopAI India — AI-Powered E-Commerce Platform</h3>
+          <p>Full-stack e-commerce application with Java Spring Boot, MySQL, JWT authentication, and OpenAI GPT API integration. Features product, cart &amp; order management with MVC architecture.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>OpenAI API</span><span>JWT</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="1">
+          <div class="project-number">02</div>
+          <div class="project-icon"><i class="fa fa-university"></i></div>
+          <h3>Banking Management System</h3>
+          <p>Java-based banking application with full transaction capabilities — user registration, login authentication, balance enquiry, deposit, withdrawal, and money transfer features.</p>
+          <div class="project-tags">
+            <span>Java</span><span>JDBC</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="2">
+          <div class="project-number">03</div>
+          <div class="project-icon"><i class="fa fa-book-open"></i></div>
+          <h3>Online Learning Management System</h3>
+          <p>Web-based platform developed during HCL Technologies internship, allowing students to access notes, assignments &amp; resources. Focused on responsive UI/UX design.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CERTIFICATES ══════════════ -->
+  <section id="certificates" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Credentials</span>
+        <h2 class="section-title">Certificates &amp; Internship</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal-up">
+          <div class="cert-logo hcl"><i class="fa fa-building"></i></div>
+          <div class="cert-info">
+            <h4>Python Developer Intern — Certificate of Internship</h4>
+            <span class="cert-issuer">HCL Technologies</span>
+            <p>Industry internship in development using Python programming — Feb to Apr 2025.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-logo ncvet"><i class="fa fa-award"></i></div>
+          <div class="cert-info">
+            <h4>Certificate of Achievement — Python Development</h4>
+            <span class="cert-issuer">HCL Technologies &amp; NCVET</span>
+            <p>Successfully completed the industry project in development using Python programming — Feb to Apr 2025.</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-logo edunet"><i class="fa fa-seedling"></i></div>
+          <div class="cert-info">
+            <h4>Green Skills &amp; Artificial Intelligence Foundation Course</h4>
+            <span class="cert-issuer">Edunet Foundation &amp; AICTE</span>
+            <p>Skills4Future program at VMKV Engineering College, Salem — January 2025. (Cert ID: S4F25_126998)</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-logo conf"><i class="fa fa-chalkboard-teacher"></i></div>
+          <div class="cert-info">
+            <h4>Certificate of Presentation — NCEPNCA-2025</h4>
+            <span class="cert-issuer">Vinayaka Mission's Research Foundation</span>
+            <p>Presented paper on Online Learning Management System at the National Conference on Next-Gen Computing Applications — April 4, 2025.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training -->
+      <div class="section-header reveal-up" style="margin-top:60px;">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Training &amp; Activities</h2>
+      </div>
+      <div class="workshop-list">
+        <div class="workshop-item reveal-up">
+          <div class="workshop-dot"></div>
+          <div>
+            <h4>Full Stack Java Developer Training — Besant Technologies</h4>
+            <p>Comprehensive training in Core Java, Spring Boot, Hibernate/JPA, MySQL, HTML, CSS, JavaScript &amp; REST API design. Nov 2024 – Present, Marathahalli, Bengaluru.</p>
+          </div>
+        </div>
+        <div class="workshop-item reveal-up">
+          <div class="workshop-dot"></div>
+          <div>
+            <h4>HCL Technologies — Python Development Internship</h4>
+            <p>Remote industry internship with practical front-end development experience on a real Learning Management System project. Feb – Apr 2025.</p>
+          </div>
+        </div>
+        <div class="workshop-item reveal-up">
+          <div class="workshop-dot"></div>
+          <div>
+            <h4>Paper Presentation — NCEPNCA-2025 National Conference</h4>
+            <p>Presented research on Online Learning Management System at a national-level conference organised by VMKV Arts &amp; Science College, Salem.</p>
+          </div>
+        </div>
+        <div class="workshop-item reveal-up">
+          <div class="workshop-dot"></div>
+          <div>
+            <h4>Green Skills &amp; AI — Edunet Foundation / AICTE / Shell India</h4>
+            <p>Completed foundation course on green skills and artificial intelligence under the Skills4Future program, January 2025.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ EDUCATION ══════════════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-card reveal-up">
+          <div class="edu-year">2022 – 2026</div>
+          <div class="edu-body">
+            <div class="edu-badge">B.E.</div>
+            <h3>Computer Science Engineering</h3>
+            <p class="edu-institution">Vinayaka Missions Kirupananda Variyar Engineering College, Salem</p>
+            <div class="edu-grade"><i class="fa fa-star"></i> CGPA: 7.55</div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up">
+          <div class="edu-year">2021 – 2022</div>
+          <div class="edu-body">
+            <div class="edu-badge">HSC</div>
+            <h3>Higher Secondary Certificate</h3>
+            <p class="edu-institution">Sathya Saai Matric Higher Secondary School, Pasar (State Board)</p>
+            <div class="edu-grade"><i class="fa fa-star"></i> 60%</div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up">
+          <div class="edu-year">2019 – 2020</div>
+          <div class="edu-body">
+            <div class="edu-badge">SSLC</div>
+            <h3>Secondary School Leaving Certificate</h3>
+            <p class="edu-institution">Sathya Saai Matric Higher Secondary School, Pasar (State Board)</p>
+            <div class="edu-grade"><i class="fa fa-star"></i> 65%</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">I'm actively looking for entry-level Java Developer and Full Stack Developer opportunities. Feel free to reach out!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <a href="mailto:manojkumar.r12121@gmail.com">manojkumar.r12121@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+919500553744">+91 9500553744</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div>
+                <span>Location</span>
+                <p>Bengaluru / Chennai, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/manoj-kumar-r-9a589a414" target="_blank">linkedin.com/in/manoj-kumar-r-9a589a414</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span>GitHub</span>
+                <a href="https://github.com/manojkumarr12121-jpg" target="_blank">github.com/manojkumarr12121-jpg</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">Message sent successfully! 🎉</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer>
+    <p>© 2026 <strong>Manoj Kumar R</strong>. Designed &amp; Developed with ❤️</p>
+    <div class="footer-socials">
+      <a href="mailto:manojkumar.r12121@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+      <a href="tel:+919500553744" aria-label="Phone"><i class="fa fa-phone"></i></a>
+      <a href="https://www.linkedin.com/in/manoj-kumar-r-9a589a414" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/manojkumarr12121-jpg" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
